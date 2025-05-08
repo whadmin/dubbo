@@ -85,7 +85,8 @@ public class RpcContext {
         }
     };
 
-    private static final InternalThreadLocal<RpcServiceContext> SERVICE_CONTEXT = new InternalThreadLocal<RpcServiceContext>() {
+    private static final InternalThreadLocal<RpcServiceContext>
+        SERVICE_CONTEXT = new InternalThreadLocal<RpcServiceContext>() {
         @Override
         protected RpcServiceContext initialValue() {
             return new RpcServiceContext();
